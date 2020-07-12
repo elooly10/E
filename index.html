@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script>
+      function Convert(x, y) {
+        if (typeof y === "function" || !typeof y) {
+          String(x);
+          var P = x.slice(0, 2);
+          if (P === "o-") {
+            console.log(12 + ":: " + x + ":; " + y());
+          } else {
+            console.log(13 + "::" + x);
+          }
+        }
+      }
+      Convert("o-A1", function() {
+        return typeof 2 + " :: " + typeof function() {};
+      });
+      conver;
+    </script>
+  </head>
+</html>
